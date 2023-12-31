@@ -1,0 +1,20 @@
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: red;
+  padding: 0 20px;
+}
+
+/* Header Logo Styles */
+.header__logo h5 {
+  color: white;
+  font-weight: 300;
+}
+
+/* Button Styles */
+.header .button {
+  background-color: white;
+}

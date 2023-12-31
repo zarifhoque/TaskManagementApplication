@@ -1,0 +1,76 @@
+# Authentication API Endpoints
+
+## Register a new user
+POST http://localhost:3001/api/users/register
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "testpassword"
+}
+
+###
+
+## Log in an existing user
+POST http://localhost:3001/api/users/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "testpassword"
+}
+
+###
+
+## Log in with invalid credentials
+POST http://localhost:3001/api/users/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "wrongpassword"
+}
+
+# Task API Endpoints
+
+## Get all tasks for the authenticated user
+GET http://localhost:3001/api/todos
+x-auth-token: <your-auth-token>
+
+###
+
+## Create a new task
+POST http://localhost:3001/api/todos
+Content-Type: application/json
+x-auth-token: <your-auth-token>
+
+{
+  "title": "Test Task",
+  "description": "This is a test task",
+  "dueDate": "2023-01-01"
+}
+
+###
+
+## Get a single task by id
+GET http://localhost:3001/api/todos/<taskId>
+x-auth-token: <your-auth-token>
+
+###
+
+## Delete a task by id
+DELETE http://localhost:3001/api/todos/<taskId>
+x-auth-token: <your-auth-token>
+
+###
+
+## Modify a task by id
+PUT http://localhost:3001/api/todos/<taskId>
+Content-Type: application/json
+x-auth-token: <your-auth-token>
+
+{
+  "title": "Modified Task",
+  "description": "This task has been modified",
+  "dueDate": "2023-02-01"
+}

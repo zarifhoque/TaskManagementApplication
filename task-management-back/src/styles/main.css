@@ -1,0 +1,41 @@
+.custom-h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.custom-h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.custom-h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.custom-h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.custom-h5 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.custom-h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.custom-p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
